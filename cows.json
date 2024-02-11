@@ -1,0 +1,38 @@
+{
+    "cow": {
+        "tag":"A1",
+        "calfTag":"X5",
+        "color":"red",
+        "birthday":"01-01-2015",
+        "lostCalves": "0",
+        "lateCalves": "0",
+        "antibiotics": "0"        
+    },
+    "cow1": {
+        "tag":"A2",
+        "calfTag":"J19",
+        "color":"red",
+        "birthday":"01-01-2015",
+        "lostCalves": "2",
+        "lateCalves": "0",
+        "antibiotics": "0"        
+    },
+    "cow2": {
+        "tag":"A3",
+        "calfTag":"X12",
+        "color":"black",
+        "birthday":"01-01-2015",
+        "lostCalves": "0",
+        "lateCalves": "2",
+        "antibiotics": "0"        
+    },
+    "cow3": {
+        "tag":"A4",
+        "calfTag":"T8",
+        "color":"black",
+        "birthday":"01-01-2015",
+        "lostCalves": "1",
+        "lateCalves": "0",
+        "antibiotics": "1"        
+    }
+}

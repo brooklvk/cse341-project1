@@ -5,7 +5,7 @@
     "title": "Cows API Documentation",
     "description": "Cattle/cows API MongoDB"
   },
-  "host": "cse341-lesson1-75nj.onrender.com", 
+  "host": "cse341-project1-9ars.onrender.com", 
   "basePath": "/",
   "schemes": [
     "https"

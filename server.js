@@ -11,7 +11,7 @@ const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connection');
 
 const corsOptions = {
-  origin: 'https://cse341-lesson1-75nj.onrender.com', // http://localhost:8080
+  origin: 'https://cse341-project1-9ars.onrender.com', // http://localhost:8080
   methods: 'GET,POST,PUT,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204,
@@ -48,7 +48,7 @@ const doc = {
     title: "Cows API Documentation",
     description: "Cattle/cows API MongoDB",
   },
-  host: "cse341-lesson1-75nj.onrender.com", // "localhost:8080", // same for host in swagger_output.json
+  host: "cse341-project1-9ars.onrender.com", // "localhost:8080", // same for host in swagger_output.json
   basePath: "/",
 };
 

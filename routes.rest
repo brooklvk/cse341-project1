@@ -5,9 +5,9 @@ GET http://localhost:8080/cows
 GET http://localhost:8080/cows/65c82ee102c055e047e7e308
 ###
 # GET on RENDER 
-GET https://cse341-lesson1-75nj.onrender.com/cows
+GET https://cse341-project1-9ars.onrender.com/cows
 ###
-GET https://cse341-lesson1-75nj.onrender.com/cows/65c82ee102c055e047e7e308
+GET https://cse341-project1-9ars.onrender.com/cows/65c82ee102c055e047e7e308
 ###
 # POST, PUT, and DELETE on LOCAL 
 POST http://localhost:8080/cows
@@ -39,7 +39,7 @@ Content-Type: application/json
 DELETE http://localhost:8080/cows/65d3a4bac1c8918dc9503653
 ###
 # POST, PUT, and DELETE on RENDER 
-POST https://cse341-lesson1-75nj.onrender.com/cows
+POST https://cse341-project1-9ars.onrender.com/cows
 Content-Type: application/json
 
 {
@@ -52,7 +52,7 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-PUT https://cse341-lesson1-75nj.onrender.com/cows/65d3a4bac1c8918dc9503653
+PUT https://cse341-project1-9ars.onrender.com/cows/65d3a4bac1c8918dc9503653
 Content-Type: application/json
 
 {
@@ -65,5 +65,5 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-DELETE https://cse341-lesson1-75nj.onrender.com/cows/65d3a4bac1c8918dc9503653
+DELETE https://cse341-project1-9ars.onrender.com/cows/65d3a4bac1c8918dc9503653
 ###

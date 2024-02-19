@@ -23,7 +23,7 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-PUT http://localhost:8080/cows/65d3a4bac1c8918dc9503653
+PUT http://localhost:8080/cows/65d3b3459694f6c2cd2009ef
 Content-Type: application/json
 
 {
@@ -36,7 +36,7 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-DELETE http://localhost:8080/cows/65d3a4bac1c8918dc9503653
+DELETE http://localhost:8080/cows/65d3b3459694f6c2cd2009ef
 ###
 # POST, PUT, and DELETE on RENDER 
 POST https://cse341-project1-9ars.onrender.com/cows
@@ -52,7 +52,7 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-PUT https://cse341-project1-9ars.onrender.com/cows/65d3a4bac1c8918dc9503653
+PUT https://cse341-project1-9ars.onrender.com/cows/65d3b374df9ed648255acd0f
 Content-Type: application/json
 
 {
@@ -65,5 +65,5 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-DELETE https://cse341-project1-9ars.onrender.com/cows/65d3a4bac1c8918dc9503653
+DELETE https://cse341-project1-9ars.onrender.com/cows/65d3b374df9ed648255acd0f
 ###

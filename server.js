@@ -42,6 +42,19 @@ app.get(mongodb);
 const outputFile = './swagger_output.json';
 const endpointsFiles = ['./routes/index.js']; // This is the endpoint file
 
+const { cowsValidationRules, validate } = require('./validator.js')
+app.post('/cows', cowsValidationRules(), validate, (req, res) => {
+  Cows.create({
+    tag : req.body.tag,
+    calfTag : req.body.calfTag,
+    color : req.body.color,
+    birthday : req.body.birthday,
+    lostCalves : req.body.lostCalves,
+    lateCalves : req.body.lateCalves,
+    antibiotics : req.body.antibiotics
+  }).then(cows => res.json(cows))
+})
+
 const doc = {
   info: {
     version: "1.0.0",

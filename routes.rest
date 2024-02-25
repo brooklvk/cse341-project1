@@ -4,6 +4,19 @@ GET http://localhost:8080/cows
 ###
 GET http://localhost:8080/cows/65c82ee102c055e047e7e308
 ###
+GET http://localhost:8080/calves 
+###
+GET http://localhost:8080/calves/65c82f1902c055e047e83119
+###
+# GET on RENDER 
+GET https://cse341-project1-9ars.onrender.com/cows
+###
+GET https://cse341-project1-9ars.onrender.com/cows/65c82ee102c055e047e7e308
+###
+GET https://cse341-project1-9ars.onrender.com/calves 
+###
+GET https://cse341-project1-9ars.onrender.com/calves/65c82f1902c055e047e83119
+###
 # POST, PUT, and DELETE on LOCAL 
 POST http://localhost:8080/cows
 Content-Type: application/json
@@ -18,7 +31,7 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-PUT http://localhost:8080/cows/65c83ab848c135f41abd2448
+PUT http://localhost:8080/cows/65d3b3459694f6c2cd2009ef
 Content-Type: application/json
 
 {
@@ -31,5 +44,90 @@ Content-Type: application/json
     "antibiotics": "0"        
 }
 ###
-DELETE http://localhost:8080/cows/65c83ad948c135f41abd2449
+DELETE http://localhost:8080/cows/65d3b3459694f6c2cd2009ef
+### 
+POST http://localhost:8080/calves
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "0"        
+}
+###
+PUT http://localhost:8080/calves/65da9c6d4c712947e20d042a
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "1"        
+}
+###
+DELETE http://localhost:8080/calves/65da9c6d4c712947e20d042a
+###
+# POST, PUT, and DELETE on RENDER 
+POST https://cse341-project1-9ars.onrender.com/cows
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "calfTag":"Z1",
+    "color":"black",
+    "birthday":"01-01-2015",
+    "lostCalves": "1",
+    "lateCalves": "1",
+    "antibiotics": "0"        
+}
+###
+PUT https://cse341-project1-9ars.onrender.com/cows/65d3b374df9ed648255acd0f
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "calfTag":"Z1",
+    "color":"black",
+    "birthday":"01-01-2016",
+    "lostCalves": "1",
+    "lateCalves": "2",
+    "antibiotics": "0"        
+}
+###
+DELETE https://cse341-project1-9ars.onrender.com/cows/65d3b374df9ed648255acd0f
+###
+POST https://cse341-project1-9ars.onrender.com/calves
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "0"        
+}
+###
+PUT https://cse341-project1-9ars.onrender.com/calves/65da9ccba6f8cb88f4868b1e
+Content-Type: application/json
+
+{
+    "tag":"A5",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "1"        
+}
+###
+DELETE https://cse341-project1-9ars.onrender.com/calves/65da9ccba6f8cb88f4868b1e
 ###

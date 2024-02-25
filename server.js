@@ -11,8 +11,8 @@ const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connection');
 
 const corsOptions = {
-  origin: 'http://localhost:8080', // https://cse341-lesson1-75nj.onrender.com
-  methods: 'GET,PUT,POST,DELETE',
+  origin: 'https://cse341-project1-9ars.onrender.com', // http://localhost:8080
+  methods: 'GET,POST,PUT,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204,
 };
@@ -42,13 +42,26 @@ app.get(mongodb);
 const outputFile = './swagger_output.json';
 const endpointsFiles = ['./routes/index.js']; // This is the endpoint file
 
+const { cowsValidationRules, validate } = require('./validator.js')
+app.post('/cows', cowsValidationRules(), validate, (req, res) => {
+  Cows.create({
+    tag : req.body.tag,
+    calfTag : req.body.calfTag,
+    color : req.body.color,
+    birthday : req.body.birthday,
+    lostCalves : req.body.lostCalves,
+    lateCalves : req.body.lateCalves,
+    antibiotics : req.body.antibiotics
+  }).then(cows => res.json(cows))
+})
+
 const doc = {
   info: {
     version: "1.0.0",
-    title: "Your API Documentation",
-    description: "Description of your API",
+    title: "Cows API Documentation",
+    description: "Cattle/cows API MongoDB",
   },
-  host: "localhost:8080", // "cse341-lesson1-75nj.onrender.com"
+  host: "cse341-project1-9ars.onrender.com", // "localhost:8080", // same for host in swagger_output.json
   basePath: "/",
 };
 
@@ -60,3 +73,5 @@ if (!fs.existsSync(outputFile)) {
 app.listen(port, () => {
   console.log(`Server running on port ${port}.`)
 });
+
+// change schemes in swagger_output.json from https / http 

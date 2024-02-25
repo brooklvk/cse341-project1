@@ -51,11 +51,11 @@ Content-Type: application/json
 
 {
     "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2015",
-    "lostCalves": "1",
-    "lateCalves": "1",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
     "antibiotics": "0"        
 }
 ###
@@ -64,12 +64,12 @@ Content-Type: application/json
 
 {
     "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2016",
-    "lostCalves": "1",
-    "lateCalves": "2",
-    "antibiotics": "0"        
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "1"        
 }
 ###
 DELETE http://localhost:8080/calves/id
@@ -108,11 +108,11 @@ Content-Type: application/json
 
 {
     "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2015",
-    "lostCalves": "1",
-    "lateCalves": "1",
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
     "antibiotics": "0"        
 }
 ###
@@ -121,12 +121,12 @@ Content-Type: application/json
 
 {
     "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2016",
-    "lostCalves": "1",
-    "lateCalves": "2",
-    "antibiotics": "0"        
+    "color":"red",
+    "birthday":"01-01-2023",
+    "sex": "heifer",
+    "birthType": "normal",
+    "birthWeight": "67",
+    "antibiotics": "1"        
 }
 ###
 DELETE https://cse341-project1-9ars.onrender.com/calves/id 

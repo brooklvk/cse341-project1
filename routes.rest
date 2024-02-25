@@ -4,11 +4,6 @@ GET http://localhost:8080/cows
 ###
 GET http://localhost:8080/cows/65c82ee102c055e047e7e308
 ###
-# GET on RENDER 
-GET https://cse341-lesson1-75nj.onrender.com/cows
-###
-GET https://cse341-lesson1-75nj.onrender.com/cows/65c82ee102c055e047e7e308
-###
 # POST, PUT, and DELETE on LOCAL 
 POST http://localhost:8080/cows
 Content-Type: application/json
@@ -37,33 +32,4 @@ Content-Type: application/json
 }
 ###
 DELETE http://localhost:8080/cows/65c83ad948c135f41abd2449
-###
-# POST, PUT, and DELETE on RENDER 
-POST https://cse341-lesson1-75nj.onrender.com/cows
-Content-Type: application/json
-
-{
-    "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2015",
-    "lostCalves": "1",
-    "lateCalves": "1",
-    "antibiotics": "0"        
-}
-###
-PUT https://cse341-lesson1-75nj.onrender.com/cows/id
-Content-Type: application/json
-
-{
-    "tag":"A5",
-    "calfTag":"Z1",
-    "color":"black",
-    "birthday":"01-01-2016",
-    "lostCalves": "1",
-    "lateCalves": "2",
-    "antibiotics": "0"        
-}
-###
-DELETE https://cse341-lesson1-75nj.onrender.com/cows/id
 ###

@@ -5,10 +5,10 @@
     "title": "Cows API Documentation",
     "description": "Cattle/cows API MongoDB"
   },
-  "host": "cse341-project1-9ars.onrender.com", 
+  "host": "cse341-project1-9ars.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/cows": {
@@ -129,7 +129,7 @@
         ],
         "responses": {
           "204": {
-            "description": "OK"
+            "description": "No Content"
           },
           "500": {
             "description": "Internal Server Error"

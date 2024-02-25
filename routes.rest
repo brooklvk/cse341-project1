@@ -6,7 +6,7 @@ GET http://localhost:8080/cows/65c82ee102c055e047e7e308
 ###
 GET http://localhost:8080/calves 
 ###
-GET http://localhost:8080/calves/id 
+GET http://localhost:8080/calves/65c82f1902c055e047e83119
 ###
 # GET on RENDER 
 GET https://cse341-project1-9ars.onrender.com/cows
@@ -15,7 +15,7 @@ GET https://cse341-project1-9ars.onrender.com/cows/65c82ee102c055e047e7e308
 ###
 GET https://cse341-project1-9ars.onrender.com/calves 
 ###
-GET https://cse341-project1-9ars.onrender.com/calves/id
+GET https://cse341-project1-9ars.onrender.com/calves/65c82f1902c055e047e83119
 ###
 # POST, PUT, and DELETE on LOCAL 
 POST http://localhost:8080/cows

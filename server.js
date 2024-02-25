@@ -66,9 +66,10 @@ const doc = {
 };
 
 const fs = require('fs');
-if (!fs.existsSync(outputFile)) {
-  swagger(outputFile, endpointsFiles, doc);
-}
+// if (!fs.existsSync(outputFile)) {
+//   swagger(outputFile, endpointsFiles, doc);
+// }
+swagger(outputFile, endpointsFiles, doc);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}.`)

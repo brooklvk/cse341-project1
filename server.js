@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
+const env = require(dotenv);
 
 const swagger = require('swagger-autogen')();
 const swaggerUi = require('swagger-ui-express');
@@ -38,6 +39,19 @@ mongodb.initDb((err, db) => {
       }
 });
 app.get(mongodb);
+
+const ui = SwaggerUI({});
+ui.initOAuth({
+  clientId: env.CLIENT_ID,
+  clientSecret: env.CLIENT_SECRET,
+  // realm: "your-realms",
+  appName: "MongoDB",
+  scopeSeparator: " ",
+  scopes: "openid profile",
+  additionalQueryStringParams: {},
+  useBasicAuthenticationWithAccessCodeGrant: true,
+  usePkceWithAuthorizationCodeGrant: true
+})
 
 const outputFile = './swagger_output.json';
 const endpointsFiles = ['./routes/index.js']; // This is the endpoint file
